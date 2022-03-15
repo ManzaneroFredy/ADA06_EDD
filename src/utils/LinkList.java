@@ -1,5 +1,4 @@
-package Model;
-
+package utils;
 
 public class LinkList<T extends Comparable<T>> {
     private Link<T> first;

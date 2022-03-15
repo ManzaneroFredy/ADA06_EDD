@@ -1,4 +1,4 @@
-package Model;
+package utils;
 
 public class Link <T> {
     private T dData;
