@@ -1,18 +1,25 @@
-## Getting Started
+## ADA06 Implementación de ordenamiento
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-## Folder Structure
+## Descripción
 
-The workspace contains two folders by default, where:
+Utilizando el resultado de la implementación del ADA04 (problema02) implemente los algoritmos de ordenamiento siguientes: 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Insertion Sort
+- QuickSort
+- Radix Sort
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## TO-DO
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- [ ] Deberán contemplar los atributos de movies.csv que consideren conveniente.
+- [ ] El ordenamiento podrá ser de acuerdo a lo que indique el usuario, de menor a mayor, de mayor a menor, en orden alfabético o en orden inverso al alfabético.
+- [ ] Pueden considerar uno o más atributos de movies.csv para hacer el ordenamiento.
+- [ ] Pueden considerar algunas filas o columnas de movies.csv para el ordenamiento y salida.
+- [ ] Se deberán considerar publicar en pantalla las métricas, por ejemplo: tiempo de ejecución del algoritmo, número de comparaciones, número de intercambios.
+- [ ] De igual forma, en un archivo de texto se deberán guardar las métricas antes mencionadas.
+- [ ] Se deberá cargar el csv, hacer el ordenamiento y posteriormente guardarlo en un csv ordenado de acuerdo al criterio (atributo) que se seleccione. El ordenamiento deberá reflejarse en el archivo de salida del csv.
+- [ ] Recordar que desde la línea de comandos deberán pasarle el archivo de entrada (el csv) y para el archivo de salida pueden hacerlo estático, es decir, ustedes definir un nombre de archivo de salida o podrían hacerlo dinámico, es decir, que el mismo usuario proporcione el nombre del archivo de salida.
+## Ejemplo
+Donde, movies.csv es el archivo de entrada y moviesordenado.csv es el archivo de salida, los dos proporcionados por el usuario desde la línea de comandos.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
