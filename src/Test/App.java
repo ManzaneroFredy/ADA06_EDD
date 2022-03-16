@@ -18,14 +18,17 @@ public class App {
             movies.add(movieReader.readMovie(i));
         }
 
+        //DEBUG 
+        //para comparar el funcionamiento correcto de moviesReader
         // for(Movie movie : movies){
         //     System.out.println(movie.getMovie_title() + " ("+ movie.getId() + ")");
         // }
         
 
+        // Llama al metodo para ordenar mediante quicksort y guarda el resultado  en un array de peliculas ordenado
+        ArrayList<Movie> orderMovies = quicksort.order(movies, 0, movies.size()-1,1);
 
-        ArrayList<Movie> orderMovies = quicksort.order(movies, 0, movies.size()-1);
-
+        // Imprimimor el titulo de la pelicula y su respectivo id
         for(Movie movie: orderMovies){
             System.out.println(movie.getMovie_title() + " ("+ movie.getId() + ")");
         }
