@@ -138,9 +138,9 @@ public class Movie implements Comparable<Movie> {
     @Override
     public int compareTo(Movie au) {
         int last = this.movie_title.compareTo(au.movie_title);
-        // Sorting by first name if last name is same d
         return last;
     }
+
 
     @Override
     public String toString() {

@@ -14,17 +14,21 @@ public class App {
 
         ArrayList<Movie> movies = new ArrayList<Movie>(); // Create an ArrayList Movie
         
-        for(int i= 0; i< 10;i++){
+        for(int i= 1; i<= 10;i++){
             movies.add(movieReader.readMovie(i));
         }
+
+        // for(Movie movie : movies){
+        //     System.out.println(movie.getMovie_title() + " ("+ movie.getId() + ")");
+        // }
         
 
 
-        // int[] ordenado = quicksort.order(numeros, 0, numeros.length-1);
+        ArrayList<Movie> orderMovies = quicksort.order(movies, 0, movies.size()-1);
 
-        // for(Integer value: ordenado){
-        //     System.out.println(value);
-        // }
+        for(Movie movie: orderMovies){
+            System.out.println(movie.getMovie_title() + " ("+ movie.getId() + ")");
+        }
         
     }
 }
