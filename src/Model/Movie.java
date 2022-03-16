@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class Movie implements Comparable<Movie> {
     private int id; // 1

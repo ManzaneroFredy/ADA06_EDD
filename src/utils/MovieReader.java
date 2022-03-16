@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.nio.charset.StandardCharsets;
 
-import model.Movie;
+import Model.Movie;
 
 public class MovieReader {
     private String RUTA_ARCHIVO = "src/docs/Movie.csv";
