@@ -86,96 +86,19 @@ public class RadixSort {
 
 
             // Se ingresan de nuevo las peliculas
-            for (int k = 0; k < number_base.get(0).size(); k++) {
-                moviesList.add(number_base.get(0).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(1).size(); k++) {
-                moviesList.add(number_base.get(1).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(2).size(); k++) {
-                moviesList.add(number_base.get(2).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(3).size(); k++) {
-                moviesList.add(number_base.get(3).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(4).size(); k++) {
-                moviesList.add(number_base.get(4).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(5).size(); k++) {
-                moviesList.add(number_base.get(5).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(6).size(); k++) {
-                moviesList.add(number_base.get(6).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(7).size(); k++) {
-                moviesList.add(number_base.get(7).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(8).size(); k++) {
-                moviesList.add(number_base.get(8).get(k));
-            }
-
-            for (int k = 0; k < number_base.get(9).size(); k++) {
-                moviesList.add(number_base.get(9).get(k));
+            for(List<Movie> listOfMovies: number_base){
+                for(int j = 0; j < listOfMovies.size(); j++){
+                    moviesList.add(listOfMovies.get(j));
+                }
             }
 
             //Se eliminan todas las peliculas ingresadas en la listas
-
-            int temp3 = number_base.get(0).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(0).remove(0);
-            }
-            
-            temp3 = number_base.get(1).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(1).remove(0);
-            }
-
-            temp3 = number_base.get(2).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(2).remove(0);
-            }
-
-            temp3 = number_base.get(3).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(3).remove(0);
-            }
-
-            temp3 = number_base.get(4).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(4).remove(0);
-            }
-
-            temp3 = number_base.get(5).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(5).remove(0);
-            }
-
-            temp3 = number_base.get(6).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(6).remove(0);
-            }
-
-            temp3 = number_base.get(7).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(7).remove(0);
-            }
-
-            temp3 = number_base.get(8).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(8).remove(0);
-            }
-
-            temp3 = number_base.get(9).size();
-            for (int k = 0; k < temp3; k++) {
-                number_base.get(9).remove(0);
+            for(int k = 0; k < 10; k++){
+                for(List<Movie> listOfMovies: number_base){
+                    for(int j = 0; j < listOfMovies.size(); j++){
+                        listOfMovies.remove(0);
+                    }
+                }
             }
 
         }
@@ -188,9 +111,10 @@ public class RadixSort {
          */
 
         
+        //Proceso para asignarle bien los años a las peliculas 
         int h = 0;
-        for(Movie peli: movies){
-            peli.setYear(movieYearsBackUp.get(h));
+        for(Movie movieYear: movies){
+            movieYear.setYear(movieYearsBackUp.get(h));
             h++;
         }
 
@@ -205,6 +129,7 @@ public class RadixSort {
                 }
             }
         }
+
         return moviesList;
     }
 
