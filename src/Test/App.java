@@ -31,7 +31,6 @@ public class App {
         // Imprimimor el titulo de la pelicula y su respectivo id
         for(Movie movie: orderMovies){
             System.out.println(movie.toString());
-            
         }
         
     }
