@@ -62,7 +62,7 @@
 62,A Christmas Carol ,96,Color,English,USA,PG,200000000,2009,6.8,2.35,http://www.imdb.com/title/tt1067106/?ref_=fn_tt_tt_1
 63,Jupiter Ascending ,127,Color,English,USA,PG-13,176000000,2015,5.4,2.35,http://www.imdb.com/title/tt1617661/?ref_=fn_tt_tt_1
 64,The Legend of Tarzan ,110,Color,English,USA,PG-13,180000000,2016,6.6,2.35,http://www.imdb.com/title/tt0918940/?ref_=fn_tt_tt_1
-65,"The Chronicles of Narnia: The Lion, the Witch and the Wardrobe ",150,Color,English,USA,PG,180000000,2005,6.9,2.35,http://www.imdb.com/title/tt0363771/?ref_=fn_tt_tt_1
+65,The Chronicles of Narnia: The Lion the Witch and the Wardrobe ,150,Color,English,USA,PG,180000000,2005,6.9,2.35,http://www.imdb.com/title/tt0363771/?ref_=fn_tt_tt_1
 66,X-Men: Apocalypse ,144,Color,English,USA,PG-13,178000000,2016,7.3,2.35,http://www.imdb.com/title/tt3385516/?ref_=fn_tt_tt_1
 67,The Dark Knight ,152,Color,English,USA,PG-13,185000000,2008,9,2.35,http://www.imdb.com/title/tt0468569/?ref_=fn_tt_tt_1
 68,Up ,96,Color,English,USA,PG,175000000,2009,8.3,1.85,http://www.imdb.com/title/tt1049413/?ref_=fn_tt_tt_1
@@ -236,7 +236,7 @@
 236,Oblivion ,124,Color,English,USA,PG-13,120000000,2013,7,2.35,http://www.imdb.com/title/tt1483013/?ref_=fn_tt_tt_1
 237,Star Wars: Episode III - Revenge of the Sith ,140,Color,English,USA,PG-13,113000000,2005,7.6,2.35,http://www.imdb.com/title/tt0121766/?ref_=fn_tt_tt_1
 238,Star Wars: Episode II - Attack of the Clones ,142,Color,English,USA,PG,115000000,2002,6.7,1.78,http://www.imdb.com/title/tt0121765/?ref_=fn_tt_tt_1
-239,"Monsters, Inc. ",92,Color,English,USA,G,115000000,2001,8.1,1.85,http://www.imdb.com/title/tt0198781/?ref_=fn_tt_tt_1
+239,"Monsters Inc. ",92,Color,English,USA,G,115000000,2001,8.1,1.85,http://www.imdb.com/title/tt0198781/?ref_=fn_tt_tt_1
 240,The Wolverine ,138,Color,English,USA,PG-13,120000000,2013,6.7,2.35,http://www.imdb.com/title/tt1430132/?ref_=fn_tt_tt_1
 241,Star Wars: Episode I - The Phantom Menace ,136,Color,English,USA,PG,115000000,1999,6.5,2.35,http://www.imdb.com/title/tt0120915/?ref_=fn_tt_tt_1
 242,The Croods ,98,Color,English,USA,PG,135000000,2013,7.3,2.35,http://www.imdb.com/title/tt0481499/?ref_=fn_tt_tt_1
@@ -272,12 +272,12 @@
 272,Around the World in 80 Days ,120,Color,English,USA,PG,110000000,2004,5.8,2.35,http://www.imdb.com/title/tt0327437/?ref_=fn_tt_tt_1
 273,Ali ,165, Black and White,English,USA,R,107000000,2001,6.8,2.35,http://www.imdb.com/title/tt0248667/?ref_=fn_tt_tt_1
 274,The Cat in the Hat ,82,Color,English,USA,PG,109000000,2003,3.8,1.85,http://www.imdb.com/title/tt0312528/?ref_=fn_tt_tt_1
-275,"I, Robot ",115,Color,English,USA,PG-13,120000000,2004,7.1,2.35,http://www.imdb.com/title/tt0343818/?ref_=fn_tt_tt_1
+275,"I Robot ",115,Color,English,USA,PG-13,120000000,2004,7.1,2.35,http://www.imdb.com/title/tt0343818/?ref_=fn_tt_tt_1
 276,Kingdom of Heaven ,194,Color,English,USA,R,130000000,2005,7.2,2.35,http://www.imdb.com/title/tt0320661/?ref_=fn_tt_tt_1
 277,Stuart Little ,84,Color,English,Germany,PG,133000000,1999,5.9,1.85,http://www.imdb.com/title/tt0164912/?ref_=fn_tt_tt_1
 278,The Princess and the Frog ,97,Color,English,USA,G,105000000,2009,7.1,1.85,http://www.imdb.com/title/tt0780521/?ref_=fn_tt_tt_1
 279,The Martian ,151,Color,English,USA,PG-13,108000000,2015,8.1,2.35,http://www.imdb.com/title/tt3659388/?ref_=fn_tt_tt_1
-280,"10,000 B.C.             ",22,,,,,,,7.2,,http://www.imdb.com/title/tt1869849/?ref_=fn_tt_tt_1
+280,"10 000 B.C.             ",22,,,,,,,7.2,,http://www.imdb.com/title/tt1869849/?ref_=fn_tt_tt_1
 281,The Island ,136,Color,English,USA,PG-13,126000000,2005,6.9,2.35,http://www.imdb.com/title/tt0399201/?ref_=fn_tt_tt_1
 282,Town & Country ,104,Color,English,New Line,R,90000000,2001,4.4,1.85,http://www.imdb.com/title/tt0141907/?ref_=fn_tt_tt_1
 283,Gone in Sixty Seconds ,127,Color,English,USA,PG-13,90000000,2000,6.5,2.35,http://www.imdb.com/title/tt0187078/?ref_=fn_tt_tt_1
@@ -686,7 +686,7 @@
 686,The Missing             ,60,Color,English,UK,,,,8.1,,http://www.imdb.com/title/tt3877200/?ref_=fn_tt_tt_1
 687,Hudson Hawk ,100,Color,English,USA,R,70000000,1991,5.7,1.85,http://www.imdb.com/title/tt0102070/?ref_=fn_tt_tt_1
 688,Lucky Numbers ,105,Color,English,France,R,65000000,2000,5,1.85,http://www.imdb.com/title/tt0219952/?ref_=fn_tt_tt_1
-689,"I, Frankenstein ",92,Color,English,Australia,PG-13,65000000,2014,5.1,2.35,http://www.imdb.com/title/tt1418377/?ref_=fn_tt_tt_1
+689,"I Frankenstein ",92,Color,English,Australia,PG-13,65000000,2014,5.1,2.35,http://www.imdb.com/title/tt1418377/?ref_=fn_tt_tt_1
 690,Oliver Twist ,130,Color,English,UK,PG-13,50000000,2005,6.9,2.35,http://www.imdb.com/title/tt0380599/?ref_=fn_tt_tt_1
 691,Elektra ,100,Color,English,Canada,PG-13,43000000,2005,4.8,2.35,http://www.imdb.com/title/tt0357277/?ref_=fn_tt_tt_1
 692,Sin City: A Dame to Kill For ,102, Black and White,English,USA,R,65000000,2014,6.5,1.85,http://www.imdb.com/title/tt0458481/?ref_=fn_tt_tt_1
@@ -814,7 +814,7 @@
 814,Holy Man ,114,Color,English,USA,PG,60000000,1998,4.9,2.35,http://www.imdb.com/title/tt0120701/?ref_=fn_tt_tt_1
 815,American Sniper ,133,Color,English,USA,R,58800000,2014,7.3,2.35,http://www.imdb.com/title/tt2179136/?ref_=fn_tt_tt_1
 816,Goosebumps ,103,Color,English,USA,PG,58000000,2015,6.4,2.35,http://www.imdb.com/title/tt1051904/?ref_=fn_tt_tt_1
-817,"Sabrina, the Teenage Witch             ",22,Color,English,USA,TV-G,3000000,,6.6,1.33,http://www.imdb.com/title/tt0115341/?ref_=fn_tt_tt_1
+817,"Sabrina the Teenage Witch             ",22,Color,English,USA,TV-G,3000000,,6.6,1.33,http://www.imdb.com/title/tt0115341/?ref_=fn_tt_tt_1
 818,Just Like Heaven ,95,Color,English,USA,PG-13,58000000,2005,6.7,1.85,http://www.imdb.com/title/tt0425123/?ref_=fn_tt_tt_1
 819,The Flintstones in Viva Rock Vegas ,90,Color,English,USA,PG,60000000,2000,3.6,1.85,http://www.imdb.com/title/tt0158622/?ref_=fn_tt_tt_1
 820,Rambo III ,87,Color,English,USA,R,63000000,1988,5.7,2.35,http://www.imdb.com/title/tt0095956/?ref_=fn_tt_tt_1
@@ -895,7 +895,7 @@
 895,Bullet to the Head ,92,Color,English,USA,R,55000000,2012,5.7,1.85,http://www.imdb.com/title/tt1308729/?ref_=fn_tt_tt_1
 896,The Godfather: Part III ,170,Color,English,USA,R,54000000,1990,7.6,1.85,http://www.imdb.com/title/tt0099674/?ref_=fn_tt_tt_1
 897,Elizabethtown ,123,Color,English,USA,PG-13,57000000,2005,6.4,1.85,http://www.imdb.com/title/tt0368709/?ref_=fn_tt_tt_1
-898,"You, Me and Dupree ",110,Color,English,USA,PG-13,54000000,2006,5.6,1.85,http://www.imdb.com/title/tt0463034/?ref_=fn_tt_tt_1
+898,"You Me and Dupree ",110,Color,English,USA,PG-13,54000000,2006,5.6,1.85,http://www.imdb.com/title/tt0463034/?ref_=fn_tt_tt_1
 899,Superman II ,116,Color,English,USA,PG,54000000,1980,6.8,2.35,http://www.imdb.com/title/tt0081573/?ref_=fn_tt_tt_1
 900,Gigli ,121,Color,English,USA,R,54000000,2003,2.4,2.35,http://www.imdb.com/title/tt0299930/?ref_=fn_tt_tt_1
 901,All the King's Men ,128, Black and White,English,Germany,PG-13,55000000,2006,6.2,1.85,http://www.imdb.com/title/tt0405676/?ref_=fn_tt_tt_1
@@ -921,7 +921,7 @@
 921,Casino ,178,Color,English,USA,R,52000000,1995,8.2,2.35,http://www.imdb.com/title/tt0112641/?ref_=fn_tt_tt_1
 922,From Paris with Love ,92,Color,English,France,R,52000000,2010,6.5,2.35,http://www.imdb.com/title/tt1179034/?ref_=fn_tt_tt_1
 923,Bulletproof Monk ,104,Color,English,USA,PG-13,52000000,2003,5.5,2.35,http://www.imdb.com/title/tt0245803/?ref_=fn_tt_tt_1
-924,"Me, Myself & Irene ",116,Color,English,USA,R,51000000,2000,6.5,1.85,http://www.imdb.com/title/tt0183505/?ref_=fn_tt_tt_1
+924,"Me Myself & Irene ",116,Color,English,USA,R,51000000,2000,6.5,1.85,http://www.imdb.com/title/tt0183505/?ref_=fn_tt_tt_1
 925,Barnyard ,90,Color,English,Germany,PG,51000000,2006,5.6,1.85,http://www.imdb.com/title/tt0414853/?ref_=fn_tt_tt_1
 926,Deck the Halls ,93,Color,English,USA,PG,,2006,4.9,1.85,http://www.imdb.com/title/tt0790604/?ref_=fn_tt_tt_1
 927,The Twilight Saga: New Moon ,130,Color,English,USA,PG-13,50000000,2009,4.6,2.35,http://www.imdb.com/title/tt1259571/?ref_=fn_tt_tt_1
@@ -951,7 +951,7 @@
 951,Knowing ,121,Color,English,USA,PG-13,50000000,2009,6.2,2.35,http://www.imdb.com/title/tt0448011/?ref_=fn_tt_tt_1
 952,Failure to Launch ,95,Color,English,USA,PG-13,50000000,2006,5.6,2.35,http://www.imdb.com/title/tt0427229/?ref_=fn_tt_tt_1
 953,The Ring Two ,128,Color,English,USA,PG-13,,2005,5.4,1.85,http://www.imdb.com/title/tt0377109/?ref_=fn_tt_tt_1
-954,"Crazy, Stupid, Love. ",118,Color,English,USA,PG-13,50000000,2011,7.4,2.39,http://www.imdb.com/title/tt1570728/?ref_=fn_tt_tt_1
+954,"Crazy Stupid Love. ",118,Color,English,USA,PG-13,50000000,2011,7.4,2.39,http://www.imdb.com/title/tt1570728/?ref_=fn_tt_tt_1
 955,Garfield ,80,Color,English,USA,PG,35000000,2004,5,1.85,http://www.imdb.com/title/tt0356634/?ref_=fn_tt_tt_1
 956,Christmas with the Kranks ,99,Color,English,USA,PG,60000000,2004,5.2,2.35,http://www.imdb.com/title/tt0388419/?ref_=fn_tt_tt_1
 957,Moneyball ,133,Color,English,USA,PG-13,50000000,2011,7.6,1.85,http://www.imdb.com/title/tt1210166/?ref_=fn_tt_tt_1

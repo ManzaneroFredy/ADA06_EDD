@@ -142,6 +142,18 @@ public class Movie implements Comparable<Movie> {
         return last;
     }
 
+    //Sobrecargamos el metodo compareTo cuando se necesite comparacion numerica y comparar los anios de las peliculas
+    public int compareTo(int au) {
+        if(au < this.year){
+            return 1;
+        }else if( au > this.year){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+
+
     @Override
     public String toString() {
         

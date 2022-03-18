@@ -16,20 +16,35 @@ public class App {
 
         ArrayList<Movie> movies = new ArrayList<Movie>(); // Create an ArrayList Movie
         
-        for(int i= 1; i <= 10;i++){
+        for(int i= 1; i <= 7;i++){
             movies.add(movieReader.readMovie(i));
         }
+
+        
         
         
 
         //Inicio del insertionSort
 
-        ArrayList<Movie> orderMovies = insertionSort.order(movies);
+        
+
+        long inicio = System.nanoTime();
+        // Llama al metodo para ordenar mediante quicksort y guarda el resultado  en un array de peliculas ordenado
+        ArrayList<Movie> orderMovies = insertionSort.order(movies, 1);
+        long fin = System.nanoTime();
+        long tiempo = fin-inicio;
+        
+        
 
 
         for(Movie movie: orderMovies){
-            System.out.println(movie.getMovie_title() + " (" + movie.getId() + ")");
+            System.out.println(movie.getMovie_title() + " (" + movie.getId() + ")" + " (" + movie.getYear() + ")");
         }
+        System.out.print("Tiempo de ejecucion: ");
+        System.out.println(Math.max(0L, tiempo / 1_000_000.0d)+ " milisegundos");
+        insertionSort.getComparations();
+        insertionSort.getExChange();
+        
         
     }
 }
