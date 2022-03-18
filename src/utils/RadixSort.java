@@ -1,5 +1,7 @@
 package utils;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class RadixSort {
     private List<Integer> movieYearsBackUp = new ArrayList<>();
 
     public List<Movie> AscentSort(List<Movie> moviesList) throws Exception {
+        Instant inst1 = Instant.now();
         this.clonarAnio(moviesList);
 
         for (int i = 0; i < moviesList.size(); i++) {
@@ -130,10 +133,14 @@ public class RadixSort {
             }
         }
 
+        Instant inst2 = Instant.now();
+        System.out.println("Tiempo de ejecución: " + (Duration.between(inst1, inst2) + " ms"));
         return moviesList;
     }
 
     public List<Movie> DescentSort(List<Movie> moviesList) throws Exception {
+        Instant inst1 = Instant.now();
+
         this.clonarAnio(moviesList);
 
         for (int i = 0; i < moviesList.size(); i++) {
@@ -207,9 +214,9 @@ public class RadixSort {
 
 
             // Se ingresan de nuevo las peliculas
-            for(List<Movie> listOfMovies: number_base){
-                for(int j = listOfMovies.size(); j > 0; j--){
-                    moviesList.add(listOfMovies.get(j));
+            for(int k = number_base.size() - 1; k >= 0; k--){
+                for(int j = 0; j < number_base.get(k).size(); j++){
+                    moviesList.add(number_base.get(k).get(j));
                 }
             }
 
@@ -251,6 +258,9 @@ public class RadixSort {
             }
         }
 
+        
+        Instant inst2 = Instant.now();
+        System.out.println("Tiempo de ejecución: " + (Duration.between(inst1, inst2) + " ms"));
         return moviesList;
     }
 
