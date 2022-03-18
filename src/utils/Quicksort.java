@@ -16,9 +16,9 @@ public class Quicksort {
             //Ordenar de menor a mayor
             case 1:
                 while (i < j) { // mientras no se crucen las búsquedas
-                    while (movies.get(i).compareTo(pivot.getId()) <= 0 && i < j)
+                    while (movies.get(i).compareTo(pivot.getYear()) <= 0 && i < j)
                         i++; // busca elemento mayor que pivote
-                    while (movies.get(j).compareTo(pivot.getId()) > 0)
+                    while (movies.get(j).compareTo(pivot.getYear()) > 0)
                         j--; // busca elemento menor que pivote
                     if (i < j) { // si no se han cruzado
                         aux = movies.get(i); // los intercambia
@@ -30,9 +30,9 @@ public class Quicksort {
             //Ordenar de mayor a menor
             case 2:
                 while (i < j) { // mientras no se crucen las búsquedas
-                    while (movies.get(i).compareTo(pivot.getId()) >= 0 && i < j)
+                    while (movies.get(i).compareTo(pivot.getYear()) >= 0 && i < j)
                         i++; // busca elemento mayor que pivote
-                    while (movies.get(j).compareTo(pivot.getId()) < 0)
+                    while (movies.get(j).compareTo(pivot.getYear()) < 0)
                         j--; // busca elemento menor que pivote
                     if (i < j) { // si no se han cruzado
                         aux = movies.get(i); // los intercambia
