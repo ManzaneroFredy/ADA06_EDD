@@ -11,7 +11,7 @@ import model.Movie;
 public class OutputFile{
 
 
-    public void generateOuput(List<Movie> listaMovie) throws Exception{
+    public void generateOutput(List<Movie> listaMovie) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.cvs");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
 
@@ -24,7 +24,7 @@ public class OutputFile{
         salida.close();
     }
 
-    public void generateOuput(ArrayList<Movie> listaMovie) throws Exception{
+    public void generateOutput(ArrayList<Movie> listaMovie) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.cvs");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
 
@@ -38,13 +38,15 @@ public class OutputFile{
     }
 
 
-    public void generateMetrics(List<Integer> listaMetricas, String direccionDeSalida) throws Exception{
-        FileOutputStream archivoCsv = new FileOutputStream(direccionDeSalida);
+    public void generateMetrics(int exchanges, int comparations, double executionTime) throws Exception{
+        FileOutputStream archivoCsv = new FileOutputStream("Metricas.txt");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
 
 
-        salida.write("Número de intercambios: " +  listaMetricas.get(0) +"\n"
-                        + "Número de comparaciones: " + listaMetricas.get(1));
+        salida.write("==============Métricas del algoritmo==============\n");
+        salida.write("Tiempo de ejecución: " + executionTime + " milisegundos\n");
+        salida.write("Intercambios       : " + exchanges + "\n");
+        salida.write("Comparaciones      : " + comparations+ "\n");
 
         salida.close();
     }

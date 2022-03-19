@@ -172,15 +172,16 @@ public class App {
 
          //Generate Output File
          if(orderedMoviesRs.size() > 0){
-            outputFile.generateOuput(orderedMoviesRs);
+            outputFile.generateOutput(orderedMoviesRs);
          }else{
-            outputFile.generateOuput(orderedMovies);
+            outputFile.generateOutput(orderedMovies);
          }
 
 
          //Generate Metrics and show in console
          
          gui.showMetricsView(exchanges,comparations,Math.max(0L, totalTime / 1_000_000.0d));
+         outputFile.generateMetrics(exchanges, comparations, Math.max(0L, totalTime / 1_000_000.0d));
 
          //Show orderedMovies in console
         // for(Movie movie: movies){

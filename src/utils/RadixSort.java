@@ -22,8 +22,7 @@ public class RadixSort {
      * @throws Exception
      */
     public List<Movie> AscentSort(List<Movie> moviesList) throws Exception {
-        List<Integer> comparacionesEIntercambios = new ArrayList<>();
-        OutputFile archivoSalidaMetricas = new OutputFile();
+
         
         this.clonarAnio(moviesList);
 
@@ -155,11 +154,6 @@ public class RadixSort {
             }
         }
 
-        comparacionesEIntercambios.add(numeroDeIntercambios);
-        comparacionesEIntercambios.add(numeroDeComparaciones);
-        archivoSalidaMetricas.generateMetrics(comparacionesEIntercambios, "src/Docs/metricas.csv");
-
-
         return moviesList;
     }
 
@@ -171,10 +165,6 @@ public class RadixSort {
      * @throws Exception
      */
     public List<Movie> DescentSort(List<Movie> moviesList) throws Exception {
-        List<Integer> comparacionesEIntercambios = new ArrayList<>();
-        OutputFile archivoSalidaMetricas = new OutputFile();
-        int numeroDeComparaciones = 0;
-        int numeroDeIntercambios = 0;
 
         this.clonarAnio(moviesList);
 
@@ -307,12 +297,6 @@ public class RadixSort {
         }
         
         
-        
-        System.out.println("Numero de intercambios: " + numeroDeIntercambios);
-        System.out.println("Número de comparaciones: " + numeroDeComparaciones);
-        comparacionesEIntercambios.add(numeroDeIntercambios);
-        comparacionesEIntercambios.add(numeroDeComparaciones);
-        archivoSalidaMetricas.generateMetrics(comparacionesEIntercambios, "src/Docs/metricas.csv");
         return moviesList;
     }
 
