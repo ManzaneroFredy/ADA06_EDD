@@ -37,7 +37,7 @@ public class OutputFile{
      * @throws Exception
      */
     public void generateOutput(ArrayList<Movie> listaMovie) throws Exception{
-        FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.cvs");
+        FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.csv");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
 
         for(Movie movie: listaMovie){
