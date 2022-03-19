@@ -17,7 +17,7 @@ Utilizando el resultado de la implementación del ADA04 (problema02) implemente 
 - [x] Pueden considerar uno o más atributos de movies.csv para hacer el ordenamiento.
 - [x] Pueden considerar algunas filas o columnas de movies.csv para el ordenamiento y salida.
 - [x] Se deberán considerar publicar en pantalla las métricas, por ejemplo: tiempo de ejecución del algoritmo, número de comparaciones, número de intercambios.
-- [ ] De igual forma, en un archivo de texto se deberán guardar las métricas antes mencionadas.
+- [x] De igual forma, en un archivo de texto se deberán guardar las métricas antes mencionadas.
 - [x] Se deberá cargar el csv, hacer el ordenamiento y posteriormente guardarlo en un csv ordenado de acuerdo al criterio (atributo) que se seleccione. El ordenamiento deberá reflejarse en el archivo de salida del csv.
 - [x] Recordar que desde la línea de comandos deberán pasarle el archivo de entrada (el csv) y para el archivo de salida pueden hacerlo estático, es decir, ustedes definir un nombre de archivo de salida o podrían hacerlo dinámico, es decir, que el mismo usuario proporcione el nombre del archivo de salida.
 ## Ejemplo
