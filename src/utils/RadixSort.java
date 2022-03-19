@@ -31,10 +31,8 @@ public class RadixSort {
             this.movies.add(moviesList.get(i));
         }
 
-        // for(Movie movie: movies){
-        //     System.out.println("DEBUG AÑOS PELICULAS: " + movie.getYear());
-        // }
-        //System.out.println("DEBUG MOVIE SIZE: " + this.movies.size());
+        
+        
 
         // Aqui comienza el método de ordenamiento radix
         for (int i = 0; i < NUMBER_BASE; i++) {
@@ -91,21 +89,14 @@ public class RadixSort {
                 ;
             }
 
-            // debug
-            //System.out.println("DEBUG YEARS: " + number_base.get(0).get(0).getYear());
-
-            // Se eliminan todas las peliculas ingresadas para poder ingresarlas de nuevo
+            
             int temp2 = moviesList.size();
-            //System.out.println("DEBUG TEMP SIZE: "  + temp2);
+           
             for (int k = 0; k < temp2; k++) {
                 moviesList.remove(0);
             }
 
-            //debug
-            // for (Movie movie : moviesList) {
-            //     System.out.println("DEBUG MOVIES_TITLE: " + movie.getMovie_title());
-            // }
-
+          
 
             // Se ingresan de nuevo las peliculas
             for(List<Movie> listOfMovies: number_base){
@@ -126,12 +117,7 @@ public class RadixSort {
 
         }
 
-        /*
-         * //debug
-         * for(Movie peli: moviesList){
-         * System.out.println("Pelis: " + peli.getMovie_title());
-         * }
-         */
+        
 
         
         //Proceso para asignarle bien los años a las peliculas 
@@ -145,11 +131,10 @@ public class RadixSort {
         for (int k = 0; k < moviesList.size(); k++) {
             for (int i = 0; i < movies.size(); i++) {
                 numeroDeComparaciones++;
-                //debug
-                //System.out.println("DEBUG: "+moviesList.get(k) + " COMPARANDO CON:  " + movies.get(i) + " AÑO PELICULA: " + movies.get(i).getYear());
+                
                 if (moviesList.get(k).compareTo(movies.get(i)) == 0) {
                     moviesList.get(k).setYear(movies.get(i).getYear());
-                    //System.out.println("DEBUG MOVIE YEAR: " +  moviesList.get(k).getYear());
+                    
                     break;
                 }
             }
@@ -182,10 +167,7 @@ public class RadixSort {
             this.movies.add(moviesList.get(i));
         }
 
-        // for(Movie movie: movies){
-        //     System.out.println("DEBUG AÑOS PELICULAS: " + movie.getYear());
-        // }
-        //System.out.println("DEBUG MOVIE SIZE: " + this.movies.size());
+        
 
         // Aqui comienza el método de ordenamiento radix
         for (int i = 0; i < NUMBER_BASE; i++) {
@@ -243,20 +225,16 @@ public class RadixSort {
                 ;
             }
 
-            // debug
-            //System.out.println("DEBUG YEARS: " + number_base.get(0).get(0).getYear());
+            
 
             // Se eliminan todas las peliculas ingresadas para poder ingresarlas de nuevo
             int temp2 = moviesList.size();
-            //System.out.println("DEBUG TEMP SIZE: "  + temp2);
+            
             for (int k = 0; k < temp2; k++) {
                 moviesList.remove(0);
             }
 
-            //debug
-            // for (Movie movie : moviesList) {
-            //     System.out.println("DEBUG MOVIES_TITLE: " + movie.getMovie_title());
-            // }
+         
 
 
             // Se ingresan de nuevo las peliculas
@@ -278,12 +256,7 @@ public class RadixSort {
 
         }
 
-        /*
-         * //debug
-         * for(Movie peli: moviesList){
-         * System.out.println("Pelis: " + peli.getMovie_title());
-         * }
-         */
+      
 
         
         //Proceso para asignarle bien los años a las peliculas 
@@ -296,11 +269,10 @@ public class RadixSort {
         for (int k = 0; k < moviesList.size(); k++) {
             for (int i = 0; i < movies.size(); i++) {
                 numeroDeComparaciones++;
-                //debug
-                //System.out.println("DEBUG: "+moviesList.get(k) + " COMPARANDO CON:  " + movies.get(i) + " AÑO PELICULA: " + movies.get(i).getYear());
+                
                 if (moviesList.get(k).compareTo(movies.get(i)) == 0) {
                     moviesList.get(k).setYear(movies.get(i).getYear());
-                    //System.out.println("DEBUG MOVIE YEAR: " +  moviesList.get(k).getYear());
+                
                     break;
                 }
             }
@@ -317,6 +289,11 @@ public class RadixSort {
     }
 
 
+    
+    /** 
+     * Funcion para clonar el año
+     * @param listaAClonar
+     */
     private void clonarAnio(List<Movie> listaAClonar){
         for(Movie movie: listaAClonar){
             this.movieYearsBackUp.add(movie.getYear());
@@ -324,10 +301,20 @@ public class RadixSort {
     }
 
 
+    
+    /** 
+     * getter para obtener el numero de comparaciones
+     * @return int
+     */
     public int getNumeroDeComparaciones() {
         return numeroDeComparaciones;
     }
 
+    
+    /** 
+     * getter para obtener el numero de intercambios
+     * @return int
+     */
     public int getNumeroDeIntercambios() {
         return numeroDeIntercambios;
     }

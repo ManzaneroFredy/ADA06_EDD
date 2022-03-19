@@ -40,102 +40,228 @@ public class Movie implements Comparable<Movie> {
         this.movie_imdb_link = movie_imdb_link;
     }
 
+    
+    /** 
+     * getter de la id
+     * @return int
+     */
     public int getId() {
         return id;
     }
 
+    
+    /** 
+     * setter de la id
+     * @param id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    
+    /** 
+     * getter del título de la película
+     * @return String
+     */
     public String getMovie_title() {
         return movie_title;
     }
 
+    
+    /** 
+     * setter del título de la película
+     * @param movie_title
+     */
     public void setMovie_title(String movie_title) {
         this.movie_title = movie_title;
     }
 
+    
+    /** 
+     * getter de la duración de la película
+     * @return int
+     */
     public int getDuration() {
         return duration;
     }
 
+    
+    /** 
+     * setter de la duración de la película
+     * @param duration
+     */
     public void setDuration(int duration) {
         this.duration = duration;
     }
 
+    
+    /** 
+     * getter de la propiedad color
+     * @return String
+     */
     public String getColor() {
         return color;
     }
 
+    
+    /** 
+     * setter de la propiedad color
+     * @param color
+     */
     public void setColor(String color) {
         this.color = color;
     }
 
+    
+    /** 
+     * getter del idioma de la película
+     * @return String
+     */
     public String getLanguage() {
         return language;
     }
 
+    
+    /** 
+     * setter del idioma de la película
+     * @param language
+     */
     public void setLanguage(String language) {
         this.language = language;
     }
 
+    
+    /** 
+     * getter del país de origen de la película
+     * @return String
+     */
     public String getCountry() {
         return country;
     }
 
+    
+    /** 
+     * setter del país de origen de la película
+     * @param country
+     */
     public void setCountry(String country) {
         this.country = country;
     }
 
+    
+    /** 
+     * getter del rating 
+     * @return String
+     */
     public String getContent_rating() {
         return content_rating;
     }
 
+    
+    /** 
+     * setter del rating
+     * @param content_rating
+     */
     public void setContent_rating(String content_rating) {
         this.content_rating = content_rating;
     }
 
+    
+    /** 
+     * getter del presupuesto
+     * @return long
+     */
     public long getBudget() {
         return budget;
     }
 
+    
+    /** 
+     * setter del presupuesto
+     * @param budget
+     */
     public void setBudget(long budget) {
         this.budget = budget;
     }
 
+    
+    /** 
+     * getter del año
+     * @return int
+     */
     public int getYear() {
         return year;
     }
 
+    
+    /** 
+     * setter del año
+     * @param year
+     */
     public void setYear(int year) {
         this.year = year;
     }
 
+    
+    /** 
+     * getter del imdb score
+     * @return double
+     */
     public double getImdb_score() {
         return imdb_score;
     }
 
+    
+    /** 
+     * setter del imdb score
+     * @param imdb_score
+     */
     public void setImdb_score(double imdb_score) {
         this.imdb_score = imdb_score;
     }
 
+    
+    /** 
+     * getter del aspect ratio
+     * @return double
+     */
     public double getAspect_ratio() {
         return aspect_ratio;
     }
 
+    
+    /** 
+     * setter del aspect ratio
+     * @param aspect_ratio
+     */
     public void setAspect_ratio(double aspect_ratio) {
         this.aspect_ratio = aspect_ratio;
     }
 
+    
+    /** 
+     * getter del link del imdb
+     * @return String
+     */
     public String getMovie_imdb_link() {
         return movie_imdb_link;
     }
 
+    
+    /** 
+     * setter del link del imdb
+     * @param movie_imdb_link
+     */
     public void setMovie_imdb_link(String movie_imdb_link) {
         this.movie_imdb_link = movie_imdb_link;
     }
 
+    
+    /** 
+     * funcion para comparar películas
+     * @param au
+     * @return int
+     */
     @Override
     public int compareTo(Movie au) {
         int last = this.movie_title.compareTo(au.movie_title);
@@ -143,6 +269,12 @@ public class Movie implements Comparable<Movie> {
     }
 
     
+    
+    /** 
+     * método para comparar películas por medio del año
+     * @param au
+     * @return int
+     */
     //Sobrecargamos el metodo compareTo cuando se necesite comparacion numerica y comparar los anios de las peliculas
     public int compareTo(int au) {
         if(au < this.year){
@@ -154,6 +286,10 @@ public class Movie implements Comparable<Movie> {
         }
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String toString() {
         return " (" + this.year + ") " + movie_title + " (id = "+ this.id+ ")";

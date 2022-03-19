@@ -11,6 +11,12 @@ import model.Movie;
 public class OutputFile{
 
 
+    
+    /** 
+     * Funcion que genera las salidas
+     * @param listaMovie
+     * @throws Exception
+     */
     public void generateOuput(List<Movie> listaMovie) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.cvs");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
@@ -24,6 +30,12 @@ public class OutputFile{
         salida.close();
     }
 
+    
+    /** 
+     * Funcion que genera las salidas
+     * @param listaMovie
+     * @throws Exception
+     */
     public void generateOuput(ArrayList<Movie> listaMovie) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream("MovieOutput.cvs");
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
@@ -38,6 +50,13 @@ public class OutputFile{
     }
 
 
+    
+    /** 
+     * Funcion que genera la salida de las métricas
+     * @param listaMetricas
+     * @param direccionDeSalida
+     * @throws Exception
+     */
     public void generateMetrics(List<Integer> listaMetricas, String direccionDeSalida) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream(direccionDeSalida);
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");

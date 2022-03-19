@@ -14,6 +14,12 @@ import utils.RadixSort;
 import java.util.Scanner;
 
 public class App {
+    
+    /** 
+     * Inicio la funcion principal
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
 
         // Inicializamos el movieReader
@@ -183,9 +189,9 @@ public class App {
          gui.showMetricsView(exchanges,comparations,Math.max(0L, totalTime / 1_000_000.0d));
 
          //Show orderedMovies in console
-        // for(Movie movie: movies){
-        // System.out.println(movie.toString());
-        // }
+        for(Movie movie: movies){
+        System.out.println(movie.toString());
+        }
 
     }
 }

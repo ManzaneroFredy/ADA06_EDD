@@ -60,22 +60,5 @@ public class MovieReader {
 
 
     
-    /** 
-     * Metodo que genera un archivo csv con una lista de tipo DELink<Movie>
-     * @param listaMovie Recibe el primer elemento de la lista para recorrer los siguientes elementos
-     * @throws Exception
-     */
-    // public void generarArchivoSalida(DELink<Movie> listaMovie) throws Exception{
-    //     FileOutputStream archivoCsv = new FileOutputStream("src/Docs/MovieFinal.csv");
-    //     OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
-    //     DELink<Movie> temp = listaMovie;
-
-    //     while(temp.getNext() != null){
-    //         salida.write(temp.getdData().getId() + ", " + temp.getdData().getMovie_title() + ", " + temp.getdData().getDuration()+ ", " + temp.getdData().getColor()+ ", " + temp.getdData().getLanguage()
-    //         + ", " + temp.getdData().getCountry()+ ", " + temp.getdData().getContent_rating()+ ", " + temp.getdData().getBudget()+ ", " + temp.getdData().getYear()+ ", " + temp.getdData().getImdb_score()
-    //         + ", " + temp.getdData().getAspect_ratio()+ ", " + temp.getdData().getMovie_imdb_link() + "\n");
-    //         temp = temp.getNext();
-    //     }
-    //     salida.close();
-    // }
+  
 }

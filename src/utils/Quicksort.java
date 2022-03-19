@@ -8,6 +8,15 @@ public class Quicksort {
     int exchanges = 0;
     int comparisons = 0;
 
+    
+    /** 
+     * Funcion que ordena las películas por el método quicksort
+     * @param movies
+     * @param left
+     * @param right
+     * @param orderType
+     * @return ArrayList<Movie>
+     */
     public ArrayList<Movie> order(ArrayList<Movie> movies, int left, int right, int orderType) {
         
         Movie pivot = movies.get(left); // tomamos primer elemento como pivote
@@ -109,11 +118,21 @@ public class Quicksort {
         return movies;
     }
 
+    
+    /** 
+     * getter de los intercambios
+     * @return int
+     */
     public int getExchanges() {
         return exchanges;
     }
 
 
+    
+    /** 
+     * getter de las comparaciones
+     * @return int
+     */
     public int getComparisons() {
         return comparisons;
     }
