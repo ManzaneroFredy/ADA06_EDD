@@ -1,4 +1,0 @@
-==============Métricas del algoritmo==============
-Tiempo de ejecución: 1.8019 milisegundos
-Intercambios       : 1034
-Comparaciones      : 2068
