@@ -79,8 +79,8 @@ public class Quicksort {
             default:
         }
         
-        System.out.println( "Comparaciones " + comparisons);
-        System.out.println( "Intercambios "+ exchanges);
+        // System.out.println( "Comparaciones " + comparisons);
+        // System.out.println( "Intercambios "+ exchanges);
 
         exchanges++;
         movies.set(left, movies.get(j));// se coloca el pivote en su lugar de forma que tendremos
