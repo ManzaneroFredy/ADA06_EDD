@@ -189,10 +189,10 @@ public class App {
          gui.showMetricsView(exchanges,comparations,Math.max(0L, totalTime / 1_000_000.0d));
          outputFile.generateMetrics(exchanges, comparations, Math.max(0L, totalTime / 1_000_000.0d));
 
-         //Show orderedMovies in console
-        for(Movie movie: movies){
-        System.out.println(movie.toString());
-        }
+        //  //Show orderedMovies in console
+        // for(Movie movie: movies){
+        // System.out.println(movie.toString());
+        // }
 
     }
 }
