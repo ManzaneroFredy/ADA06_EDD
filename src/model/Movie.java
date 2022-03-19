@@ -139,14 +139,24 @@ public class Movie implements Comparable<Movie> {
     @Override
     public int compareTo(Movie au) {
         int last = this.movie_title.compareTo(au.movie_title);
-        // Sorting by first name if last name is same d
         return last;
+    }
+
+    
+    //Sobrecargamos el metodo compareTo cuando se necesite comparacion numerica y comparar los anios de las peliculas
+    public int compareTo(int au) {
+        if(au < this.year){
+            return 1;
+        }else if( au > this.year){
+            return -1;
+        }else{
+            return 0;
+        }
     }
 
     @Override
     public String toString() {
-        
-        return movie_title;
+        return " (" + this.year + ") " + movie_title + " (id = "+ this.id+ ")";
     }
 
 }

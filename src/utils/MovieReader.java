@@ -55,6 +55,7 @@ public class MovieReader {
     }
 
 
+
     
     /** 
      * Metodo que genera un archivo csv con una lista de tipo DELink<Movie>
@@ -75,4 +76,3 @@ public class MovieReader {
     //     salida.close();
     // }
 }
-
