@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class GUI {
 
+    /** 
+     * Impresion del menú principal
+     */
+
     public void showHomeView() {
         
             System.out.println("=======================================================");
@@ -18,6 +22,11 @@ public class GUI {
             
     }
 
+    
+    /** 
+     * Impresion del menú para elegir la forma de ordenamiento
+     * @return int
+     */
     public int showOrderTypeView() {
         int opcion = -1;
         try {
@@ -41,6 +50,11 @@ public class GUI {
         return opcion;
     }
 
+    
+    /** 
+     *  Impresion del menú para elegir la forma de ordenamiento
+     * @return int
+     */
     public int showOrderTypeViewLimited() {
         int opcion = -1;
         try {
@@ -62,6 +76,13 @@ public class GUI {
         return opcion;
     }
 
+    
+    /** 
+     * menú que muestra las métricas del algoritmo
+     * @param exchanges
+     * @param comparations
+     * @param executionTime
+     */
     public void showMetricsView(int exchanges, int comparations, double executionTime) {
         System.out.println("==============Métricas del algoritmo==============");
         System.out.println("Tiempo de ejecución: " + executionTime + " milisegundos");
@@ -69,6 +90,11 @@ public class GUI {
         System.out.println("Comparaciones      : " + comparations);
     }
 
+    
+    /** 
+     * menú para ingresar el directorio de las películas
+     * @return String
+     */
     public String showRootView() {
         String direccion;
         Scanner input = new Scanner(System.in);

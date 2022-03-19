@@ -10,6 +10,8 @@ public class InsertionSort {
     private int exChanges = 0;
 
     /**
+     * 
+     * método para ordenar por insertion sort
      * @param movies
      * @param x
      * @return ArrayList<Movie>
@@ -99,11 +101,17 @@ public class InsertionSort {
         return movies;
     }
 
+     /**
+     * getter para los intercambios
+     */
     public int getExChange() {
 
         return this.exChanges;
     }
 
+    /**
+     * getter para las comparaciones
+     */
     public int getComparations() {
 
         return this.comparations;
