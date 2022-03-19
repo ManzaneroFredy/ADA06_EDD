@@ -3,6 +3,7 @@ package utils;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import model.Movie;
 
 public class RadixSort {
@@ -11,7 +12,8 @@ public class RadixSort {
                                             new ArrayList<Movie>(), new ArrayList<Movie>(),  new ArrayList<Movie>(), new ArrayList<Movie>(), new ArrayList<Movie>(), new ArrayList<Movie>()));
     private final static int NUMBER_BASE = 4;
     private List<Integer> movieYearsBackUp = new ArrayList<>();
-   
+    int numeroDeComparaciones = 0;
+    int numeroDeIntercambios = 0;
     
     /** 
      * Esta función ordena una lista del objeto Movie de forma ascendente
@@ -20,8 +22,9 @@ public class RadixSort {
      * @throws Exception
      */
     public List<Movie> AscentSort(List<Movie> moviesList) throws Exception {
-        int numeroDeComparaciones = 0;
-        int numeroDeIntercambios = 0;
+        List<Integer> comparacionesEIntercambios = new ArrayList<>();
+        OutputFile archivoSalidaMetricas = new OutputFile();
+        
         this.clonarAnio(moviesList);
 
         for (int i = 0; i < moviesList.size(); i++) {
@@ -107,6 +110,7 @@ public class RadixSort {
             // Se ingresan de nuevo las peliculas
             for(List<Movie> listOfMovies: number_base){
                 for(int j = 0; j < listOfMovies.size(); j++){
+                    numeroDeIntercambios++;
                     moviesList.add(listOfMovies.get(j));
                 }
             }
@@ -151,8 +155,9 @@ public class RadixSort {
             }
         }
 
-        System.out.println("Numero de intercambios: " + numeroDeIntercambios);
-        System.out.println("Número de comparaciones: " + numeroDeComparaciones);
+        comparacionesEIntercambios.add(numeroDeIntercambios);
+        comparacionesEIntercambios.add(numeroDeComparaciones);
+        archivoSalidaMetricas.generateMetrics(comparacionesEIntercambios, "src/Docs/metricas.csv");
 
 
         return moviesList;
@@ -166,6 +171,8 @@ public class RadixSort {
      * @throws Exception
      */
     public List<Movie> DescentSort(List<Movie> moviesList) throws Exception {
+        List<Integer> comparacionesEIntercambios = new ArrayList<>();
+        OutputFile archivoSalidaMetricas = new OutputFile();
         int numeroDeComparaciones = 0;
         int numeroDeIntercambios = 0;
 
@@ -192,33 +199,43 @@ public class RadixSort {
                 switch (temp) {
                     case 0:
                         number_base.get(0).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 1:
                         number_base.get(1).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 2:
                         number_base.get(2).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 3:
                         number_base.get(3).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 4:
                         number_base.get(4).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 5:
                         number_base.get(5).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 6:
                         number_base.get(6).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 7:
                         number_base.get(7).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 8:
                         number_base.get(8).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     case 9:
                         number_base.get(9).add(moviesList.get(f));
+                        numeroDeIntercambios++;
                         break;
                     default:
                         throw new Exception("Error en el ordenamiento radix en la parte de insertar las peliculas");
@@ -246,6 +263,7 @@ public class RadixSort {
             for(int k = number_base.size() - 1; k >= 0; k--){
                 for(int j = 0; j < number_base.get(k).size(); j++){
                     moviesList.add(number_base.get(k).get(j));
+                    numeroDeIntercambios++;
                 }
             }
 
@@ -277,6 +295,7 @@ public class RadixSort {
 
         for (int k = 0; k < moviesList.size(); k++) {
             for (int i = 0; i < movies.size(); i++) {
+                numeroDeComparaciones++;
                 //debug
                 //System.out.println("DEBUG: "+moviesList.get(k) + " COMPARANDO CON:  " + movies.get(i) + " AÑO PELICULA: " + movies.get(i).getYear());
                 if (moviesList.get(k).compareTo(movies.get(i)) == 0) {
@@ -291,6 +310,9 @@ public class RadixSort {
         
         System.out.println("Numero de intercambios: " + numeroDeIntercambios);
         System.out.println("Número de comparaciones: " + numeroDeComparaciones);
+        comparacionesEIntercambios.add(numeroDeIntercambios);
+        comparacionesEIntercambios.add(numeroDeComparaciones);
+        archivoSalidaMetricas.generateMetrics(comparacionesEIntercambios, "src/Docs/metricas.csv");
         return moviesList;
     }
 
@@ -301,4 +323,17 @@ public class RadixSort {
         }
     }
 
+
+    public int getNumeroDeComparaciones() {
+        return numeroDeComparaciones;
+    }
+
+    public int getNumeroDeIntercambios() {
+        return numeroDeIntercambios;
+    }
+
+
+
+
+    
 }

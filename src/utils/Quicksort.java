@@ -38,12 +38,15 @@ public class Quicksort {
                 while (i < j) { // mientras no se crucen las búsquedas
                     while (movies.get(i).compareTo(pivot.getYear()) >= 0 && i < j)
                         i++; // busca elemento mayor que pivote
+                        comparisons++;
                     while (movies.get(j).compareTo(pivot.getYear()) < 0)
                         j--; // busca elemento menor que pivote
+                        comparisons++;
                     if (i < j) { // si no se han cruzado
                         aux = movies.get(i); // los intercambia
                         movies.set(i, movies.get(j));
                         movies.set(j, aux);
+                        exchanges++;
                     }
                 }
                 break;
@@ -52,12 +55,15 @@ public class Quicksort {
                 while (i < j) { // mientras no se crucen las búsquedas
                     while (movies.get(i).compareTo(pivot) <= 0 && i < j)
                         i++; // busca elemento mayor que pivote
+                        comparisons++;
                     while (movies.get(j).compareTo(pivot) > 0)
                         j--; // busca elemento menor que pivote
+                        comparisons++;
                     if (i < j) { // si no se han cruzado
                         aux = movies.get(i); // los intercambia
                         movies.set(i, movies.get(j));
                         movies.set(j, aux);
+                        exchanges++;
                     }
                 }
                 break;
@@ -66,12 +72,15 @@ public class Quicksort {
                 while (i < j) { // mientras no se crucen las búsquedas
                     while (movies.get(i).compareTo(pivot) >= 0 && i < j)
                         i++; // busca elemento mayor que pivote
+                        comparisons++;
                     while (movies.get(j).compareTo(pivot) < 0)
                         j--; // busca elemento menor que pivote
+                        comparisons++;
                     if (i < j) { // si no se han cruzado
                         aux = movies.get(i); // los intercambia
                         movies.set(i, movies.get(j));
                         movies.set(j, aux);
+                        exchanges++;
                     }
                 }
                 break;
