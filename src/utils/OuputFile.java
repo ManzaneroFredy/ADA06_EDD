@@ -7,13 +7,12 @@ import java.util.List;
 import model.Movie;
 
 
-public class Archivo{
+public class OuputFile{
 
 
-    public void generarArchivoSalida(List<Movie> listaMovie, String direccionDeSalida) throws Exception{
+    public void generateOuput(List<Movie> listaMovie, String direccionDeSalida) throws Exception{
         FileOutputStream archivoCsv = new FileOutputStream(direccionDeSalida);
         OutputStreamWriter salida = new OutputStreamWriter(archivoCsv, "UTF-8");
-
 
         for(Movie movie: listaMovie){
             salida.write(movie.getId() + ", " + movie.getMovie_title() + ", " + movie.getDuration()+ ", " + movie.getColor()+ ", " + movie.getLanguage()

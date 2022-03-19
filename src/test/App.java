@@ -3,7 +3,7 @@ package test;
 import java.util.ArrayList;
 
 import model.Movie;
-import utils.Archivo;
+import utils.OuputFile;
 import utils.MovieReader;
 import utils.RadixSort;
 import java.util.Scanner;
@@ -14,7 +14,7 @@ public class App {
         String archivoDeSalida = "";
         MovieReader mv = new MovieReader();
         RadixSort rs = new RadixSort();
-        Archivo archivoSalida = new Archivo();
+        OuputFile archivoSalida = new OuputFile();
 
         ArrayList<Movie> movies = new ArrayList<Movie>(); // Create an ArrayList Movie
         System.out.println("Ingrese la ruta donde desee generar el archivo de salida");
@@ -38,7 +38,7 @@ public class App {
             System.out.println(movie.getMovie_title() + " ("+ movie.getId() + ")" + " (movie year: " + movie.getYear() + ")");
         }
 
-        archivoSalida.generarArchivoSalida(rs.DescentSort(movies), archivoDeSalida);
+        archivoSalida.generateOuput(rs.DescentSort(movies), archivoDeSalida);
 
     }
 }
